@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Inknut+Antiqua" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Inknut Antiqua";
+        }
+        /*        CSS RESET*/
+        
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            border: 0;
+            width: 100%;
+            vertical-align: top;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*    CSS RESET ENDS*/
+        
+        .full-width {
+            width: 100%
+        }
+        
+        .fixed-width {
+            width: 1000px;
+            margin: auto;
+        }
+        
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4 {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .col-2,
+        .col-3,
+        .col-4 {
+            float: left;
+        }
+        
+        .col-1 {
+            width: 980px;
+        }
+        
+        .col-2 {
+            width: 480px;
+        }
+        
+        .col-3 {
+            width: calc(1000px/3 - 20px)
+        }
+        
+        .col-4 {
+            width: 230px
+        }
+        
+        nav {
+            height: 50px;
+            background-color: #433d3d;
+        }
+        
+        nav .logo {
+            float: left;
+            width: 120px;
+            height: 50px;
+            background-color: #7e6161;
+        }
+        
+        nav .menu {
+            float: right;
+        }
+        
+        nav li {
+            list-style: none;
+            float: left;
+        }
+        
+        nav .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 50px;
+        }
+        nav .menu a:hover{
+            color: #8e2f2f
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 5px 20px;
+            text-decoration: none;
+            background-color: #5f3939;
+            color: #EEE;
+        }
+        .btn:hover {
+            background-color: #c7c7c7;
+            color: #5f3939
+        }
+        
+        header {
+            padding-top: 300px;
+            padding-bottom: 300px;
+            background-image: url(season-1985856_1920.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        
+        header h1 {
+            text-align: center;
+            color: #fff;
+        }
+        
+        #about,
+        #porfolio,
+        #service {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+        
+        #porfolio {
+            background-color: rgba(191, 144, 104, 0.39);
+        }
+        
+        #porfolio .col-3 {
+            margin-bottom: 30px;
+        }
+        
+        #porfolio .fixed-width:nth-of-type(1) {
+            margin-bottom: 30px;
+        }
+        
+        #service {
+            text-align: center;
+        }
+        
+        .title {
+            text-align: center;
+            font-style: 40px;
+            margin-bottom: 20px;
+        }
+        footer{
+            background-color: #7e6161;
+            color: #eee;
+            padding: 20px;
+        }
+        footer .sns{
+            text-align: right;
+        }
+        footer .sns a{
+            color: #eee;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        footer .sns a:nth-of-type(1):hover{
+            color:#ef8d1a
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="full-width">
+        <div class="fixed-wdith">
+            <div class="logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">RATE</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="ful-width">
+        <h1>QWERTY DESIGN</h1>
+    </header>
+    <div class="full-width" id="about">
+        <h2 class="title">ABOUT</h2>
+        <div class="fixed-width clearfix">
+            <div class="col-2">
+                <img src="photographer-2256456_1920.jpg" alt="ABOUT THE FOUNDER">
+            </div>
+            <div class="col-2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore expedita similique ut debitis culpa quidem quis consequuntur voluptates architecto, laboriosam possimus eum veritatis, ab voluptatibus tempore blanditiis iste vero commodi.
+                </p>
+
+                <a href="#" class="btn">MORE</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="full-width" id="porfolio">
+        <h2 class="title">PORFOLIO</h2>
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <img src="ryan2013.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="ryan2013.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="ryan2013.jpg" alt="">
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <img src="ryan2013.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="ryan2013.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="ryan2013.jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="full-width" id="service">
+        <h2 class="title">SERVICE</h2>
+        <div class="fixed-width clearfix">
+            <div class="col-4">
+                <div><i class="fa fa-code fa-5x" aria-hidden="true"></i>
+                </div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cupiditate fuga iste voluptatem magni. .</p>
+                <a href="#" class="btn">More</a>
+            </div>
+            <div class="col-4">
+                <div><i class="fa fa-cloud-upload fa-5x" aria-hidden="true"></i> </div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cupiditate fuga iste voluptatem magni.</p>
+                <a href="#" class="btn">More</a>
+            </div>
+            <div class="col-4">
+                <div><i class="fa fa-globe fa-5x" aria-hidden="true"></i> </div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cupiditate fuga iste voluptatem magni. </p>
+                <a href="#" class="btn">More</a>
+            </div>
+            <div class="col-4">
+                <div><i class="fa fa-venus-mars fa-5x" aria-hidden="true"></i> </div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cupiditate fuga iste voluptatem magni. </p>
+                <a href="#" class="btn">More</a>
+            </div>
+        </div>
+    </div>
+    <footer class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-2">
+                <div class="copyrights">
+                    2017 &copy; All Rights Reserved. Design By Delphine
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="sns">
+                    <a href="#" class="fa fa-facebook-square fa-lg"></a>
+                    <a href="#" class="fa fa-instagram fa-lg"></a>
+                    <a href="#" class="fa fa-weixin fa-lg"></a>
+                    <a href="#" class="fa fa-youtube-square fa-lg"></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
